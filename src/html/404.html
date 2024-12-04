@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ru">
+
+@@include('./src/html/includes/head.html', {
+  "title": "Smart Device | Страница не найдена"
+})
+
+<body class="page__body page__body--not-found">
+  <div style="display: none">
+    @@include('./build/img/sprite.svg')
+  </div>
+
+  @@include('./src/html/includes/header.html')
+
+  <main class="page__inner not-found">
+    <div class="not-found__inner">
+      <h1 class="not-found__title">Страница не&nbsp;найдена</h1>
+
+      <p class="not-found__paragraph">Реализованные страницы:</p>
+
+      <ul class="not-found__list">
+        <li class="not-found__item"><a class="not-found__link" href="index.html">Главная</a></li>
+      </ul>
+    </div>
+  </main>
+
+  @@include('./src/html/includes/footer.html')
+
+  <div class="modal">
+    <div class="modal__inner">
+      @@include('./src/html/includes/write-us.html', {
+        "count": "1",
+        "id": "",
+        "mixes": "modal__content",
+        "title": "Закажите звонок",
+        "subtitle": "Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время",
+        "buttonCaption": "Отправить"
+      })
+      <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
